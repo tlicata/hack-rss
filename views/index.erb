@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= feed.channel.title %></title>
+    <link rel="stylesheet" href="app.css" type="text/css"></link>
   </head>
   <body>
     <h1><%= feed.channel.title %></h1>
@@ -9,7 +10,7 @@
       <% feed.items.each do |item| %>
       <li>
         <span class="headline"><%= item.title %></span>
-        <span class="star" style="margin-left: 2px;"></span>
+        <span class="star"></span>
       </li>
       <% end %>
     </ol>
