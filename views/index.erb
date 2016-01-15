@@ -7,8 +7,12 @@
     <h1><%= feed.channel.title %></h1>
     <ol>
       <% feed.items.each do |item| %>
-      <li><%= item.title %></li>
+      <li>
+        <span class="headline"><%= item.title %></span>
+        <span class="star" style="margin-left: 2px;"></span>
+      </li>
       <% end %>
     </ol>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
