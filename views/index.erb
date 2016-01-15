@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= feed.channel.title %></title>
+  </head>
+  <body>
+    <h1><%= feed.channel.title %></h1>
+    <ol>
+      <% feed.items.each do |item| %>
+      <li><%= item.title %></li>
+      <% end %>
+    </ol>
+  </body>
+</html>
